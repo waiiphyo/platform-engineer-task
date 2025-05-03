@@ -1,0 +1,22 @@
+groups:
+- name: checkout-api-alerts
+  rules:
+  - alert: HighLatencyBurnRate
+    expr: |
+      (rate(http_request_duration_seconds_bucket{le="0.25", path="/checkout"}[5m])
+       / rate(http_requests_total{path="/checkout"}[5m])) < 0.95
+    for: 10m
+    labels:
+      severity: critical
+    annotations:
+      summary: "High latency on /checkout endpoint"
+
+  - alert: HighErrorRateBurnRate
+    expr: |
+      (rate(http_requests_total{status=~"5..", path="/checkout"}[5m])
+       / rate(http_requests_total{path="/checkout"}[5m])) > 0.001
+    for: 10m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Error rate too high on /checkout"
