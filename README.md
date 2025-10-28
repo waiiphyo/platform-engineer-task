@@ -1,4 +1,4 @@
-This repository contains multiple projects, each stored in its own directory within the projects folder. Each project is self-contained with its own README file providing specific details.
+This repository contains multiple projects, each stored in its own directory within the projects folder. Each project is self-contained with its own README file providing specific details. 
 
 ## Table of Contents
 - 1.Kubernetes_Mastery
@@ -25,4 +25,4 @@ This repository contains multiple projects, each stored in its own directory wit
 - Task 3: Airflow Architecture & DAG Design
 - Task 4: Python & Bash Scripting
 
-Each project has its own setup and installation instructions, available in its respective README file.
+Each project has its own setup and installation instructions, available in its respective README file
