@@ -1,7 +1,7 @@
 # 4. Python &amp; Bash Scripting
 ## 4.1 Kubernetes Config Validation Tool
 
-This Python CLI tool validates Kubernetes YAML manifests in a specified directory. It ensures each file has the required `apiVersion`, `kind`, and `metadata.name` fields.
+This Python CLI tool validates Kubernetes YAML manifests in a specified directory. It ensures each file has the required `apiVersion`, `kind`, and `metadata.name` fields. Add new for test
 
 ---
 
